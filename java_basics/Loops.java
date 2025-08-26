@@ -21,15 +21,32 @@ public class Loops {
 
     //print number from 1 to n
      
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter Num");
-    int range = sc.nextInt();
-    int counter = 1;
+    // Scanner sc = new Scanner(System.in);
+    // System.out.println("Enter Num");
+    // int range = sc.nextInt();
+    // int counter = 1;
 
-    while (counter <= range) {
-        System.out.print(counter +" ");
-        counter++;
+    // while (counter <= range) {
+    //     System.out.print(counter +" ");
+    //     counter++;
+    // }
+    // System.out.println();
+
+
+    //print sum of n numbers
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter num: ");
+    int n = sc.nextInt();
+    int sum = 0;
+
+
+    int  i=1;
+    while (i <= n) {
+        sum += i;
+        i++;
     }
-    System.out.println();
+
+    System.out.println("sum is: " +sum);
 }
 }
