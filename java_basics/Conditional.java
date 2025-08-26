@@ -65,6 +65,22 @@ public class Conditional {
         //     Tax= (int) (Income*0.3);
         // }
         // System.out.println("Your tax is: " +Tax);
+
+
+        //Print largest Of 3
+
+        // int A =10;
+        // int B=20;
+        // int C=30;
+
+        // if (A>=B && A>=C) {
+        //     System.out.println("A");
+        // } else if( B>=C){
+        //     System.out.println("B");
+        // }
+        // else if(C>=B){
+        //     System.out.println("C");
+        // }
     }
 
 }
