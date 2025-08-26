@@ -81,6 +81,17 @@ public class Conditional {
         // else if(C>=B){
         //     System.out.println("C");
         // }
+
+
+
+        //Check is an stident pass or fail ?
+
+        //using ternery operator 
+
+        int marks = 67;
+
+        String reportcard = marks>=33 ? "PASS" : "FAIL";
+        System.out.println(reportcard);
     }
 
 }
