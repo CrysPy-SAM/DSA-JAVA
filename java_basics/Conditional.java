@@ -47,10 +47,24 @@ public class Conditional {
         // else if(age >= 1  &&  age < 13){
         //     System.out.println("Children");
         // }
+       
+        //Income Tax Calculator
+         
 
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter your Income:");
+        // int Income = sc.nextInt();
+        // int Tax;
 
-
-        
+        // if (Income < 500000) {
+        //     Tax = 0;
+        // } else if (Income >= 500000 && Income <1000000){
+        //       Tax = (int)(Income * 0.2);
+        // }
+        // else{
+        //     Tax= (int) (Income*0.3);
+        // }
+        // System.out.println("Your tax is: " +Tax);
     }
 
 }
