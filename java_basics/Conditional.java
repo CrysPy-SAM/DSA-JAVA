@@ -88,10 +88,15 @@ public class Conditional {
 
         //using ternery operator 
 
-        int marks = 67;
+        // int marks = 67;
 
-        String reportcard = marks>=33 ? "PASS" : "FAIL";
-        System.out.println(reportcard);
+        // String reportcard = marks>=33 ? "PASS" : "FAIL";
+        // System.out.println(reportcard);
+
+
+        //Switch Statements
+
+        
     }
 
 }
