@@ -59,41 +59,7 @@ public class Conditional {
         // if (Income < 500000) {
         //     Tax = 0;
         // } else if (Income >= 500000 && Income <1000000){
-        //       Tax = (int)(Income * 0.2);
-        // }
-        // else{
-        //     Tax= (int) (Income*0.3);
-        // }
-        // System.out.println("Your tax is: " +Tax);
-
-
-        //Print largest Of 3
-
-        // int A =10;
-        // int B=20;
-        // int C=30;
-
-        // if (A>=B && A>=C) {
-        //     System.out.println("A");
-        // } else if( B>=C){
-        //     System.out.println("B");
-        // }
-        // else if(C>=B){
-        //     System.out.println("C");
-        // }
-
-
-
-        //Check is an stident pass or fail ?
-
-        //using ternery operator 
-
-        // int marks = 67;
-
-        // String reportcard = marks>=33 ? "PASS" : "FAIL";
-        // System.out.println(reportcard);
-
-
+        //       Tax = (int)(Income
         //Switch Statements
 
         
