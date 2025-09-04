@@ -16,7 +16,7 @@ public class Stocks {
             return maxProfit;
     }
     public static void main(String[] args) {
-        int prices[] = {7, 1, 5, 3, 6, 4};
+        int prices[] = {7, 1, 5, 3, 6, 4};    //o(n) Tme complexity
         System.out.println(buyAndsellStocks(prices));
     }
     
