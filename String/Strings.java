@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Strings {
     public static void main(String[] args) {
+
         // char arr[] = {'h', 'e', 'l', 'l', 'o'};
         // String str = "abcde";
         // String str2 = new String("xyz");
@@ -24,6 +25,16 @@ public class Strings {
         String firstName = "Satyam";
         String lastName = "Mishra";           
         String completeName = firstName + " " + lastName; 
-        System.out.println(completeName.charAt(2));
+
+        // call method to print all letters
+        printLetters(completeName);
+    }
+
+    // Function to print each letter of a string
+    public static void printLetters(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            System.out.print(str.charAt(i) + " ");  // prints each character with a space
+        }
+        System.out.println(); // new line at the end
     }
 }
