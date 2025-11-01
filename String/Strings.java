@@ -1,4 +1,7 @@
+
 package String;
+
+import java.util.Scanner;
 
 public class Strings {
     public static void main(String[] args) {
@@ -7,6 +10,11 @@ public class Strings {
         String str2 = new String("xyz");
         String str3 = new String(arr);
 
-        //STRINGS ARE IMMUTABLE (NEVER CHANGEBLE)
+        // STRINGS ARE IMMUTABLE (NEVER CHANGEABLE)
+
+        Scanner sc = new Scanner(System.in);
+        String name; 
+        name = sc.nextLine(); // Input with spaces 
+        System.out.println(name);
     }
 }
