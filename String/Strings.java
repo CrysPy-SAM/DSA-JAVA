@@ -24,6 +24,6 @@ public class Strings {
         String firstName = "Satyam";
         String lastName = "Mishra";           
         String completeName = firstName + " " + lastName; 
-        System.out.println(completeName);
+        System.out.println(completeName.charAt(2));
     }
 }
