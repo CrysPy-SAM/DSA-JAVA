@@ -36,5 +36,11 @@ class Solution {
             res.add(node.word);
             node.word = null;
         }
-      
+        board[i][j] = '#';
+        if (i > 0) dfs(board, i - 1, j, node, res);
+        if (j > 0) dfs(board, i, j - 1, node, res);
+        if (i < board.length - 1) dfs(board, i + 1, j, node, res);
+        if (j < board[0].length - 1) dfs(board, i, j + 1, node, res);
+        board[i][j] = c;
+    }
 }
