@@ -18,7 +18,15 @@ class Solution {
         return root;
     }
 
-   
+    public List<String> findWords(char[][] board, String[] words) {
+        List<String> res = new ArrayList<>();
+        TrieNode root = buildTrie(words);
+        int m = board.length, n = board[0].length;
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++)
+                dfs(board, i, j, root, res);
+        return res;
+    }
 
     private void dfs(char[][] board, int i, int j, TrieNode node, List<String> res) {
         char c = board[i][j];
