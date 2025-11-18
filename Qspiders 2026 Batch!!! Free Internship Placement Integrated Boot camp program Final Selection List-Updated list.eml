@@ -1,0 +1,1079 @@
+Delivered-To: mishrasaty9889@gmail.com
+Received: by 2002:a05:7010:7b88:b0:4ec:13cb:aa8f with SMTP id vo8csp1777237mdc;
+        Tue, 11 Nov 2025 03:48:04 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCWCwCJgJ0bvhjg8Z3VJ/qIzVaRxXFYC5p+jX8RJzbfpnXwF+/zjaH9B4k2eaCpJmUXa1OKXqM9IdSsFTTayFg==@gmail.com
+X-Google-Smtp-Source: AGHT+IEQbGtj17huVsFDmDJPPTYomg4g/O7cDGO7SVxOGzrvMgXIVCJjVWh60ApZNmgRx+mqM871
+X-Received: by 2002:a05:6512:ad1:b0:594:2e42:d49a with SMTP id 2adb3069b0e04-5945f1671bbmr3144680e87.21.1762861683845;
+        Tue, 11 Nov 2025 03:48:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1762861683; cv=none;
+        d=google.com; s=arc-20240605;
+        b=laiduwJ+qQwIrLo14uremSnqED0xBEYQWEIsWvhcOqyX1lwbGS73+L4Cp3/vMrVZ6v
+         o7mRUBUfy93LFxYxPVy46CR17rJFHoZJ9A7V5YBjlO5w197PVe0ek6w2kLnAT0VZN2xR
+         d3SvPwxBnxLEYA8NyYfCq3dc34yJksPONQDHk8XVdM1PMOHuPoiNSOwhWYtf1r+yZwlt
+         ckDGnIpsJXTaRqlb6DyP/S0dRlBEIadmQWVuYX2BfU+cOnXofYh2sGRNO4L+y4LSuXyU
+         1rya5uGbRHVjRB3mLMk7p7O9WGKAQexcI+OMNXIBQV1AgRD0CQxiIJOIJGrImGR9+RwL
+         o5pQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :cc:to:from:dkim-signature;
+        bh=mr3BkK8JqD4SNpvfZZU3hpd7qWVi3YDXeaJ2Dgu0qBo=;
+        fh=r7ClJ4m1ORGzYzCkrjMBzg+wOHsqCUzyo1hg9TYsqCo=;
+        b=ODAUM5J6zfT91l+sKsVb+Nbcyp+7GZKt8AfGu43hKxIcrl7hVgzADThPlV1x2VEdiu
+         fIhnL6jIM26jw4QQPwB+EaiIsOGYbclLP/4mRxs3ZTsgoiBCJG/KSg/FGziXZk/7HD6w
+         INQKavEe4iVW90syMSvWa15bPc0yPqdXoJ+DXRHmFJBdX25XJNANv/uHOzacokOBJBT8
+         OGyWnnnURmC8XV5oAchDZVNdkpDOvAy/TiT5wfO8i39xjur4UewOtC26TubZAwBPEXfX
+         WtC0/s8L7RInkZIEGP3LXYoy8/rjFrhZKGZX8DHLeBJxtEvyuEiy+CPsBevbnjGvrtxP
+         FYvg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@qspiders.in header.s=mailsvc header.b=bRtnzzEX;
+       spf=pass (google.com: domain of soundaryaincub@qspiders.in designates 95.216.161.108 as permitted sender) smtp.mailfrom=soundaryaincub@qspiders.in
+Return-Path: <soundaryaincub@qspiders.in>
+Received: from smtp7.to.yukthi.com (smtp7.to.yukthi.com. [95.216.161.108])
+        by mx.google.com with ESMTPS id 2adb3069b0e04-5944a39e9dbsi3646862e87.541.2025.11.11.03.48.03
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 11 Nov 2025 03:48:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of soundaryaincub@qspiders.in designates 95.216.161.108 as permitted sender) client-ip=95.216.161.108;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@qspiders.in header.s=mailsvc header.b=bRtnzzEX;
+       spf=pass (google.com: domain of soundaryaincub@qspiders.in designates 95.216.161.108 as permitted sender) smtp.mailfrom=soundaryaincub@qspiders.in
+Received: from dkim (static.214.137.109.65.clients.your-server.de [65.109.137.214])
+	by smtp7.to.yukthi.com (Postfix) with SMTP id 00B9220755;
+	Tue, 11 Nov 2025 17:17:08 +0530 (IST)
+X-Fuglu-Spamstatus: NO
+X-Fuglu-Suspect: 590854ad56b44325801dca145be92748
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=qspiders.in;
+ i=@qspiders.in; l=51146; q=dns/txt; s=mailsvc; t=1762861682; h=from :
+ reply-to : subject : date : to : cc : resent-date : resent-from :
+ resent-to : resent-cc : in-reply-to : references : list-id : list-help
+ : list-unsubscribe : list-subscribe : list-post : list-owner :
+ list-archive; bh=mr3BkK8JqD4SNpvfZZU3hpd7qWVi3YDXeaJ2Dgu0qBo=;
+ b=bRtnzzEX/zePsyZJQPSgYaCHq/lldPkBwwPkJrD0Uv7aMR0GY7+SEbG98E3a66jkOVjhM
+ tT/9HIeW3/tTAhgJqK5YQQYz0eOKhn3FpcCYf6Hd3lmk5ThAmJh9joY8zAMiCUZtdkZOeWj
+ 1F6iNxrgzmcjHvEw2JhH1eu+BivCp50=
+Received: from relay-out2.yukthi.net (relay-out2.yukthi.net [162.55.33.142])
+	by smtp7.to.yukthi.com (Postfix) with ESMTP id F1EC01F6D3;
+	Tue, 11 Nov 2025 17:17:06 +0530 (IST)
+Received: from 3aeff1660658 (unknown [95.217.22.85])
+	by relay-out2.yukthi.net (Postfix) with SMTP id CAF563FA78;
+	Tue, 11 Nov 2025 17:17:53 +0530 (IST)
+X-Yukthi-EUID: f30ff3654ebae6632c4f90862f02b588
+Received: from DESKTOP7RCIT08 (unknown [125.99.242.229])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by smtp-proxy1.yukthi.net (Postfix) with ESMTPSA id 06E783F1EE;
+	Tue, 11 Nov 2025 17:17:39 +0530 (IST)
+From: <soundaryaincub@qspiders.in>
+To: <anujd1964@gmail.com>
+Cc: <bharathi.v@qspiders.com>,
+	<deeksha.s@qspiders.com>,
+	<aishwarya.jahagirdar@qspiders.in>
+Subject: Qspiders 2026 Batch!!! Free Internship Placement Integrated Boot camp
+ program Final Selection List-Updated list
+Date: Tue, 11 Nov 2025 17:17:37 +0530
+Message-ID: <017101dc5301$02869780$0793c680$@qspiders.in>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0172_01DC532F.1C411D70"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdxTANr4xgzhsyXvRjaGdvD+74V6YQ==
+Content-Language: en-in
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0172_01DC532F.1C411D70
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0173_01DC532F.1C411D70"
+
+
+------=_NextPart_001_0173_01DC532F.1C411D70
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hello Sir/Mam,
+
+Good Evening,
+
+We are happy to announce the Final Selects for Free Incubation placement
+integrated Boot camp program of 2026 passing Batch from your college.
+
+We heartily congratulate students for getting offered  & we officially
+welcome all the selected students to Q/J/PySpiders.
+
+ 
+
+  
+
+ 
+
+Qspiders 
+
+ 
+
+ 
+Dated: 
+
+Dear Sir/Mam,
+
+We are happy to inform you that Below 2026 passing batch Students from Sir
+chhotu ram institute of engineering and technology(SCRIET)have been Selected
+in our Incubation Screening Drive.
+
+ 
+
+
+Full Name
+
+Degree College Name
+
+Degree Stream
+
+Degree Type
+
+Status
+
+
+Satyam Mishra
+
+sir chhotu ram institute of engineering and technology(SCRIET)
+
+computer science and engineering()
+
+bachelor of technology 
+
+Selected
+
+
+Devang Shaurya Pratap Singh
+
+sir chhotu ram institute of engineering and technology(SCRIET)
+
+computer science (CS)
+
+bachelor of technology 
+
+Selected
+
+
+AMAN PRATAP SINGH
+
+sir chhotu ram institute of engineering and technology(SCRIET)
+
+computer science (CS)
+
+bachelor of technology 
+
+Selected
+
+
+khushi gupta
+
+sir chhotu ram institute of engineering and technology(SCRIET)
+
+computer science and engineering()
+
+bachelor of technology 
+
+Selected
+
+
+Rishabh Bhardwaj
+
+sir chhotu ram institute of engineering and technology(SCRIET)
+
+computer science and engineering()
+
+bachelor of technology 
+
+Selected
+
+
+ABHISHEK VAISHYA
+
+sir chhotu ram institute of engineering and technology(SCRIET)
+
+computer science (CS)
+
+bachelor of technology 
+
+Selected
+
+ 
+
+ 
+
+NOTE:
+
+*	We do not charge for the complete Internship training which takes
+4-6 Months
+*	We do not charge you for any interviews and placement activity
+conducted at our end.
+*	The training includes Software Development - Java Full Stack &
+Python with Data Analytics, Python with Data science, AI, ML & Software
+Testing with automation and General Aptitude.
+*	On successful completion of their training they will be awarded with
+course completion Certificate 
+*	No other programs are included in this training module
+
+RULES: 
+
+  Following rules to be followed for placement activities:
+
+You should have 90% attendance in class room / practical session
+
+Should be ready to relocate to different cities for job / interviews
+(Bangalore, Chennai, Coimbatore, Hyderabad, Pune and Delhi)
+
+Complete the given assignments in time.
+
+Give everyday presentation
+
+Bring this offer letter on the first day of reporting  with all semester
+marks cards, 10th 12th/PUC & Degree[Till Now],1 Govt ID proof & 2 passport
+size photo.
+
+Important - This letter is valid only on respective date of joining
+only,which will be communicated once we discuss with your placement officer
+& we would also send you the joining & location confirmation mail.  If you
+join on any other date, free training will not be valid.     
+
+ 
+
+Thank & Regards
+
+Qspiders Campus Connect Team.
+
+ 
+
+For Selected students anything in further information or Query contact only
+on  below numbers according to college 
+
+State/Location Uttar pradesh-- 8904398684
+
+[Note- This mail is a final  confirmation of your selection, No Commercials
+involved  &  students while reporting can take a print/show the mail
+confirmation to the respective concerns @ Q/J/PYSpiders ]
+
+ 
+
+ 
+
+ 
+
+
+
+Thanks & Regards,
+
+SOUNDARYA.V
+
+7259311763
+
+ <http://www.qspiders.com/> www.qspiders.com |  <http://www.jspiders.com/>
+www.jspiders.com
+
+Bengaluru | Mysore | Chennai | Hyderabad |AP|Pune | Mumbai | Kolkatta
+|Chandigarh | 
+
+Noida | Gurugram | Bhubaneswar | UK-London | US-California | Ireland |
+
+ 
+
+ 
+
+ 
+
+
+------=_NextPart_001_0173_01DC532F.1C411D70
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 15 =
+(filtered medium)"><!--[if !mso]><style>v\:* =
+{behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-link:Header;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-IN;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:519320891;
+	mso-list-template-ids:-1434410404;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-IN =
+link=3D"#0563C1" vlink=3D"#954F72"><div class=3DWordSection1><p =
+class=3DMsoNormal><span style=3D'font-size:12.0pt'>Hello =
+Sir/Mam,</span><span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal><span style=3D'font-size:12.0pt'>Good =
+Evening,</span><span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'font-size:12.0pt'>We are =
+happy to announce the Final Selects for Free&nbsp;Incubation placement =
+integrated Boot camp program of 2026 passing Batch from your =
+college.</span><span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'font-size:12.0pt'>We =
+heartily congratulate students for getting offered &nbsp;&amp; we =
+officially welcome all the selected students to =
+Q/J/PySpiders.</span><span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'font-size:12.0pt'>&nbsp; =
+</span><span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal>&nbsp;<span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoHeader><img width=3D343 height=3D85 =
+style=3D'width:3.5729in;height:.8854in' id=3D"Picture_x0020_1" =
+src=3D"cid:image001.jpg@01DC532F.13C1F980" alt=3Ddownload><b><span =
+lang=3DEN-GB =
+style=3D'font-size:22.0pt;color:#FFC000'>Qspiders</span></b><b><span =
+lang=3DEN-GB style=3D'font-size:22.0pt'> </span></b><span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'margin-left:108.0pt;text-align:justify'><span =
+style=3D'font-size:18.0pt'>&nbsp;</span><span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><span =
+style=3D'font-size:11.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span =
+style=3D'font-size:9.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+&nbsp;&nbsp;&nbsp;&nbsp; Dated: </span><span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><span style=3D'font-size:9.0pt'>Dear<span =
+style=3D'color:black'> </span></span><span lang=3DEN-US =
+style=3D'font-size:9.0pt;color:black'>Sir/Mam,</span><span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><span style=3D'font-size:9.0pt'>We are =
+happy to inform you that Below 2026 passing batch Students</span><span =
+style=3D'font-size:11.0pt'> </span><span =
+style=3D'font-size:9.0pt'>from</span><span style=3D'font-size:11.0pt'> =
+<b><span style=3D'color:black'>Sir chhotu ram institute of engineering =
+and technology(SCRIET)</span></b></span><span =
+style=3D'font-size:9.0pt'>have </span><span lang=3DEN-GB =
+style=3D'font-size:9.0pt'>been Selected in our Incubation Screening =
+Drive.<o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><span lang=3DEN-GB =
+style=3D'font-size:9.0pt'><o:p>&nbsp;</o:p></span></p><table =
+class=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=3D0 =
+width=3D1045 =
+style=3D'width:784.0pt;margin-left:-.4pt;border-collapse:collapse'><tr =
+style=3D'height:15.0pt'><td width=3D189 nowrap valign=3Dbottom =
+style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Full =
+Name<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom style=3D'width:304.0pt;border:solid windowtext =
+1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Degree College =
+Name<o:p></o:p></span></b></p></td><td width=3D235 nowrap =
+valign=3Dbottom style=3D'width:176.0pt;border:solid windowtext =
+1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Degree =
+Stream<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom style=3D'width:116.0pt;border:solid windowtext =
+1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Degree =
+Type<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border:solid windowtext =
+1.0pt;border-left:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Status<o:p></o:p></span></b></p></=
+td></tr><tr style=3D'height:15.0pt'><td width=3D189 nowrap =
+valign=3Dbottom style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;border-top:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Satyam =
+Mishra<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom =
+style=3D'width:304.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>sir chhotu ram institute of =
+engineering and technology(SCRIET)<o:p></o:p></span></b></p></td><td =
+width=3D235 nowrap valign=3Dbottom =
+style=3D'width:176.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>computer science and =
+engineering()<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom =
+style=3D'width:116.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>bachelor of technology =
+<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Selected<o:p></o:p></span></b></p>=
+</td></tr><tr style=3D'height:15.0pt'><td width=3D189 nowrap =
+valign=3Dbottom style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;border-top:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Devang Shaurya Pratap =
+Singh<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom =
+style=3D'width:304.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>sir chhotu ram institute of =
+engineering and technology(SCRIET)<o:p></o:p></span></b></p></td><td =
+width=3D235 nowrap valign=3Dbottom =
+style=3D'width:176.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>computer science =
+(CS)<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom =
+style=3D'width:116.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>bachelor of technology =
+<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Selected<o:p></o:p></span></b></p>=
+</td></tr><tr style=3D'height:15.0pt'><td width=3D189 nowrap =
+valign=3Dbottom style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;border-top:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>AMAN PRATAP =
+SINGH<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom =
+style=3D'width:304.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>sir chhotu ram institute of =
+engineering and technology(SCRIET)<o:p></o:p></span></b></p></td><td =
+width=3D235 nowrap valign=3Dbottom =
+style=3D'width:176.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>computer science =
+(CS)<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom =
+style=3D'width:116.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>bachelor of technology =
+<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Selected<o:p></o:p></span></b></p>=
+</td></tr><tr style=3D'height:15.0pt'><td width=3D189 nowrap =
+valign=3Dbottom style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;border-top:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>khushi =
+gupta<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom =
+style=3D'width:304.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>sir chhotu ram institute of =
+engineering and technology(SCRIET)<o:p></o:p></span></b></p></td><td =
+width=3D235 nowrap valign=3Dbottom =
+style=3D'width:176.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>computer science and =
+engineering()<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom =
+style=3D'width:116.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>bachelor of technology =
+<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Selected<o:p></o:p></span></b></p>=
+</td></tr><tr style=3D'height:15.0pt'><td width=3D189 nowrap =
+valign=3Dbottom style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;border-top:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Rishabh =
+Bhardwaj<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom =
+style=3D'width:304.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>sir chhotu ram institute of =
+engineering and technology(SCRIET)<o:p></o:p></span></b></p></td><td =
+width=3D235 nowrap valign=3Dbottom =
+style=3D'width:176.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>computer science and =
+engineering()<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom =
+style=3D'width:116.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>bachelor of technology =
+<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Selected<o:p></o:p></span></b></p>=
+</td></tr><tr style=3D'height:15.0pt'><td width=3D189 nowrap =
+valign=3Dbottom style=3D'width:142.0pt;border:solid windowtext =
+1.0pt;border-top:none;background:#00B050;padding:0cm 5.4pt 0cm =
+5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>ABHISHEK =
+VAISHYA<o:p></o:p></span></b></p></td><td width=3D405 nowrap =
+valign=3Dbottom =
+style=3D'width:304.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>sir chhotu ram institute of =
+engineering and technology(SCRIET)<o:p></o:p></span></b></p></td><td =
+width=3D235 nowrap valign=3Dbottom =
+style=3D'width:176.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>computer science =
+(CS)<o:p></o:p></span></b></p></td><td width=3D155 nowrap =
+valign=3Dbottom =
+style=3D'width:116.0pt;border-top:none;border-left:none;border-bottom:sol=
+id windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm =
+5.4pt 0cm 5.4pt;height:15.0pt'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>bachelor of technology =
+<o:p></o:p></span></b></p></td><td width=3D61 nowrap valign=3Dbottom =
+style=3D'width:46.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext =
+1.0pt;background:#00B050;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'><p =
+class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><b><span =
+style=3D'font-size:11.0pt;color:black'>Selected<o:p></o:p></span></b></p>=
+</td></tr></table><p class=3DMsoNormal =
+style=3D'text-align:justify'><span lang=3DEN-GB =
+style=3D'font-size:9.0pt'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal style=3D'text-align:justify'><span lang=3DEN-GB =
+style=3D'font-size:9.0pt'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal style=3D'text-align:justify'><b><u>NOTE</u>:</b><span =
+lang=3DEN-US><o:p></o:p></span></p><ul style=3D'margin-top:0cm' =
+type=3Ddisc><li class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:105%;mso-list=
+:l0 level1 lfo1'>We do not charge for the complete Internship training =
+which takes 4-6 Months<span lang=3DEN-US><o:p></o:p></span></li><li =
+class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:105%;mso-list=
+:l0 level1 lfo1'>We do not charge you for any interviews and placement =
+activity conducted at our end.<span =
+lang=3DEN-US><o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:105%;mso-list=
+:l0 level1 lfo1'>The training includes <b>Software Development &#8211; =
+Java Full Stack &amp; Python with Data Analytics, Python with Data =
+science, AI, ML &amp; Software Testing with automation</b> <b>and =
+General Aptitude.</b><span lang=3DEN-US><o:p></o:p></span></li><li =
+class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:105%;mso-list=
+:l0 level1 lfo1'>On successful completion of their training they will be =
+awarded with course completion Certificate <span =
+lang=3DEN-US><o:p></o:p></span></li><li class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:105%;mso-list=
+:l0 level1 lfo1'>No other programs are included in this training =
+module<span lang=3DEN-US><o:p></o:p></span></li></ul><p =
+class=3DMsoNormal style=3D'text-align:justify'><b><u>RULES</u>: =
+</b><span lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><b>&nbsp;&nbsp;Following rules to be =
+followed for placement activities:</b><span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:0cm;margin-right:0cm;margin-bottom:8.0pt;marg=
+in-left:52.5pt;text-align:justify;line-height:105%'>You should have 90% =
+attendance in class room / practical session<span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:0cm;margin-right:0cm;margin-bottom:8.0pt;marg=
+in-left:52.5pt;text-align:justify;line-height:105%'>Should be ready to =
+relocate to different cities for job / interviews (Bangalore, Chennai, =
+Coimbatore, Hyderabad, Pune and Delhi)<span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:0cm;margin-right:0cm;margin-bottom:8.0pt;marg=
+in-left:52.5pt;text-align:justify;line-height:105%'>Complete the given =
+assignments in time.<span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal =
+style=3D'mso-margin-top-alt:0cm;margin-right:0cm;margin-bottom:8.0pt;marg=
+in-left:52.5pt;text-align:justify;line-height:105%'>Give everyday =
+presentation<span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal =
+style=3D'mso-margin-top-alt:0cm;margin-right:0cm;margin-bottom:8.0pt;marg=
+in-left:52.5pt;text-align:justify;line-height:105%'>Bring this offer =
+letter on the first day of reporting &nbsp;with all semester marks =
+cards, 10<sup>th</sup> 12<sup>th</sup>/PUC &amp; Degree[Till Now],1 Govt =
+ID proof &amp; 2 passport size photo.<span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><span =
+style=3D'color:black;background:yellow'>Important - This letter is valid =
+only on respective date of joining only,which will be communicated once =
+we discuss with your placement officer &amp; we would also send you the =
+joining &amp; location confirmation mail.&nbsp; If you join on any other =
+date, free training will not be valid.</span>&nbsp;&nbsp;&nbsp;&nbsp; =
+<span lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'>&nbsp;<span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'>Thank &amp; Regards<span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-align:justify'>Qspiders Campus Connect Team.<span =
+lang=3DEN-US><o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US>For Selected students anything in =
+further information or Query contact only on &nbsp;below numbers =
+according to college <o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>State/Location Uttar pradesh-- =
+8904398684<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>[Note- This mail is a final &nbsp;confirmation of your =
+selection, No Commercials involved &nbsp;&amp; &nbsp;students while =
+reporting can take a print/show the mail confirmation to the respective =
+concerns @ <span style=3D'color:#ED7D31'>Q</span>/<span =
+style=3D'color:#ED7D31'>J</span>/<span =
+style=3D'color:#ED7D31'>P</span>YSpiders ]<o:p></o:p></span></p><p =
+class=3DMsoNormal>&nbsp;<span lang=3DEN-US><o:p></o:p></span></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><span =
+style=3D'color:#1F497D'><img width=3D312 height=3D92 =
+style=3D'width:3.25in;height:.9583in' id=3D"Picture_x0020_3" =
+src=3D"cid:image002.png@01DC532F.13C1F980" alt=3D"Signature latest- =
+Namratha"></span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DEN-US =
+style=3D'color:#1F497D'>Thanks &amp; Regards,</span><o:p></o:p></p><p =
+class=3DMsoNormal><span lang=3DEN-US =
+style=3D'color:#1F497D'>SOUNDARYA.V<o:p></o:p></span></p><p =
+class=3DMsoNormal>7259311763<o:p></o:p></p><p class=3DMsoNormal><a =
+href=3D"http://www.qspiders.com/"><span =
+lang=3DEN-US>www.qspiders.com</span></a><span style=3D'color:#1F497D'> =
+</span><span lang=3DEN-US style=3D'color:#1F497D'>| </span><a =
+href=3D"http://www.jspiders.com/"><span =
+lang=3DEN-US>www.jspiders.com</span></a><o:p></o:p></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'color:#1F497D'>Bengaluru | =
+Mysore | Chennai | Hyderabad |AP|Pune | Mumbai | Kolkatta |Chandigarh | =
+</span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DEN-US =
+style=3D'color:#1F497D'>Noida | Gurugram | Bhubaneswar | UK-London | =
+US-California | Ireland |</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'text-align:justify'><span lang=3DEN-GB =
+style=3D'font-size:9.0pt'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal style=3D'text-align:justify'><span lang=3DEN-GB =
+style=3D'font-size:9.0pt'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></=
+span></p></div></body></html>
+------=_NextPart_001_0173_01DC532F.1C411D70--
+
+------=_NextPart_000_0172_01DC532F.1C411D70
+Content-Type: image/jpeg;
+	name="image001.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.jpg@01DC532F.13C1F980>
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABVAVcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKAEJCgkkADkk1ntruloxU30OR1wc1neMJpI9MiRGIWSTDgdxgnFZui+G7fUtOW5lmlVmYjCYwM
+V5eIxtb6x9XoRTaV3c76OGpex9tVk0r20Oi/t/Sv+f6L9aP7f0r/AJ/ovzNZMvhPTYADLfSxg9C7
+KM/pVebw9pKQSMmp5cKSB5iHJqXVzFK/JH7/APgjVPBN25mdZDPFcxCSCRZEPRlORUlcL4SuxBqE
+iyTLHE8eSGbAz+Peu2ininBMUqSAdSjA4rrwOK+tUVUtY58VQ9hUcL3JKKKK6znCiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKAOZ8af8eVr/wBdT/I1N4emMHhdplAJjEjAHvjmk8X28s2mRvGhZYpNz47DBGaw7DX0tNFk
+08wM5cOA4YYG4eleDOtDD5lKdV2Tj/ketClKtglGmrtM8V0y11b4n+LRDeX6/abhWl3zZZI1AztV
+ew7V2KfAm/tJEuTq9kRCwkIEDZOOaZ4G8OTeEPEUWqzXMd0scLR+WiFScjGck17F/aqajpEsthH5
+0m0hoS2GXI/z9a9b+0sPVvGlO+nmcH1KtTtKpG2p5lqPhSXxpbDTYLmK3YMJt0qFhgdsD615/daf
+rfw58Y+RYXErTW5jcy28TiOUHkqw6EdjXs3hWWO31nEziMmMoN3GWz0+td9iuPIqlsLbzZ0ZrG9e
+/kiOCQzW8UpG0ugbHpkVJRRXqHAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUVHPKIIJJmBIRSxA9hmqc2pNawJcXMOyEj
+JZW3FRtJ6Y9u1RKcYuzKUW9UaBGRg9Kzb7S7N7O5MdlCZTG20iMZzjiqyeKdPktlnQTtvkSJI1TL
+szAkcA+x60z/AISuy+0FNsmNmdnlt5u/zPL27Mf3vf8ATmnKEZfEriUmtmfP/gbxSNH8TxTeI7m7
+ms0jeOWOTdJtfGOVPcGvV4fiv4Dt5N8JljfGNyWTA/yqHWdO8Ea9fzXGsaPJb33myL+7LRySqm3c
+7YIH8Q65PNVv+EF+HTQT3KWd9JbQRCWSdJJSqgruA65JwQcD1q+Sje/LZ+iFzVLWuWpvih8Pp5Wl
+lEryN1Y2bZP6VyHiL4u6zP4hEPhW6A05ljjiSW0BdnPBxnn0xXZaf8L/AALqcTyQWN0AjbSGunyD
+jPZq1fDvgbw3odyup2GjorrnZPPO0jRgcEgHOD9KS9jTd0tX5A/aTWr0R2EBkNvEZRiQoN/1xzUl
+UxqcHGRINyhlBQ/MCcDH50f2nb87vMUAlSWQgZAyR9cVn7WHcv2cuxcoqquoQsyqQ6MxUKGUjOc4
+/kaSTUbeNyhLFgSDgen/AOun7WFr3FyS2sW6KQHIBHelqyQooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBHVXRkYAqwwQe4rPj0Oxiv3vEW
+USvGI2HmsVIGcHGeoBIz6GtGik4pu7Q02tjAl8G6O+0xwyxN5scjukz732btqlicgfMeh71YHhfR
+hD5Ys+Nu3d5r7/v+ZndndndznOa16KYjEfwhociqHsixVnYOZ5N+Xxu+bdk52jv2FaKadaxR3CRx
+bBcf63axBb5QvXORwAOKtUUAUdO0ew0ozGyg8szEGRi7MWIGByxPapVsbdDlVYDJO0O2OevGcVZo
+pOKe6Gm1sVU0+1Rgwi5UADLE4AORjJp01lDNEyFcbiWyOoJGCf1qxRU+zha1h88t7lRdNtVTaUZv
+u/MXJPHTnPFONhbGLyzGSmSSNx5J6555qzRR7KHZBzy7iKqogVQAqjAA7ClooqyQooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
+
+------=_NextPart_000_0172_01DC532F.1C411D70
+Content-Type: image/png;
+	name="image002.png"
+Content-Transfer-Encoding: base64
+Content-ID: <image002.png@01DC532F.13C1F980>
+
+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
+
+------=_NextPart_000_0172_01DC532F.1C411D70--
+
