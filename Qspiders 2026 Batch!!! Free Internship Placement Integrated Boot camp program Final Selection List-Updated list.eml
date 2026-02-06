@@ -266,15 +266,6 @@ Bengaluru | Mysore | Chennai | Hyderabad |AP|Pune | Mumbai | Kolkatta
 Noida | Gurugram | Bhubaneswar | UK-London | US-California | Ireland |
 
  
-public class Main {
-    public static void main(String[] args) {
-        String str = "hello";
-        String reversed = new StringBuilder(str).reverse().toString();
-        System.out.println(reversed);
-    }
-}
-
- 
 
  
 
