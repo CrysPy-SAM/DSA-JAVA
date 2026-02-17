@@ -30,7 +30,7 @@ public class Strings {
         printLetters(completeName);
     }
 
-    // Function to print each letter of a string
+   
     public static void printLetters(String str) {
         for (int i = 0; i < str.length(); i++) {
             System.out.print(str.charAt(i) + " ");  // prints each character with a space
