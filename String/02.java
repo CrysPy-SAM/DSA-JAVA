@@ -21,7 +21,7 @@ public class Strings {
         System.out.println(fullName);          // prints the full name
         System.out.println(fullName.length()); // prints the length of the string
 
-        // concatenation 
+        
         String firstName = "Satyam";
         String lastName = "Mishra";           
         String completeName = firstName + " " + lastName; 
