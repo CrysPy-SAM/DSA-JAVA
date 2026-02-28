@@ -10,7 +10,6 @@ public class Strings {
         String str2 = new String("xyz");
         String str3 = new String(arr);
 
-        // STRINGS ARE IMMUTABLE (NEVER CHANGEABLE)
 
         Scanner sc = new Scanner(System.in);
         String name; 
