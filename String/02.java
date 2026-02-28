@@ -18,10 +18,8 @@ public class Strings {
         System.out.println(name);
 
         String fullName = "John Doe";
-        System.out.println(fullName);          // prints the full name
-        System.out.println(fullName.length()); // prints the length of the string
-
-        
+        System.out.println(fullName);         
+        System.out.println(fullName.length());         
         String firstName = "Satyam";
         String lastName = "Mishra";           
         String completeName = firstName + " " + lastName; 
